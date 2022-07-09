@@ -31,8 +31,8 @@ namespace HeadsOrTails
         Console.WriteLine("Round{0}: " + coin, i);
       }
       Console.WriteLine("Heads: {0}, Tails: {1}", headsNum, tailsNum);
-      if(tailsNum < headsNum) Console.WriteLine("You won!");
-      else Console.WriteLine("You lost!");
+      if(tailsNum < headsNum) Console.WriteLine("{0} won!", name);
+      else Console.WriteLine("{0} lost!", name);
     }
   }
 }
