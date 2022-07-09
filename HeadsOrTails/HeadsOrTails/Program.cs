@@ -2,13 +2,17 @@
 
 namespace HeadsOrTails
 {
-  class Program {
+  class Program
+  {
     public static void Main(string[] args)
     {
       Random random = new Random();
       int headsNum = 0;
       int tailsNum = 0;
 
+      Console.Write("Who are you?\n>");
+      String name = Console.ReadLine();
+      Console.WriteLine("Hello, {0}!", name);
       Console.WriteLine("Tossing a coin...");
       for(int i = 1; i <= 3; i++)
       {
@@ -27,6 +31,8 @@ namespace HeadsOrTails
         Console.WriteLine("Round{0}: " + coin, i);
       }
       Console.WriteLine("Heads: {0}, Tails: {1}", headsNum, tailsNum);
+      if(tailsNum < headsNum) Console.WriteLine("You won!");
+      else Console.WriteLine("You lost!");
     }
   }
 }
