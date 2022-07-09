@@ -9,6 +9,9 @@ namespace HeadsOrTails
       int headsNum = 0;
       int tailsNum = 0;
 
+      Console.Write("Who are you?\n>");
+      String name = Console.ReadLine();
+      Console.WriteLine("Hello, {0}!", name);
       Console.WriteLine("Tossing a coin...");
       for(int i = 1; i <= 3; i++)
       {
